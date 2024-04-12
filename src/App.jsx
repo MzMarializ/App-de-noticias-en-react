@@ -7,7 +7,7 @@ function App() {
   const [category, setCategory] = useState("general");
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=4a4a284781cf4963a5f41ace29277a71`)
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=Your api key here`)
       .then(res => res.json())
       .then(data => setItems(data.articles));
   }, [category]);
